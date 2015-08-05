@@ -60,10 +60,28 @@
     <Content Include="config.xml" />
     <Content Include="gulpfile.js" />
     <Content Include="js\app.js" />
+    <Content Include="js\router\AppRouter.js" />
+    <Content Include="js\views\BaseView.js" />
+    <Content Include="js\views\MainView.js" />
+    <Content Include="js\views\MenuView.js" />
+    <Content Include="js\views\SettingsView.js" />
+    <Content Include="less\app.css">
+      <DependentUpon>app.less</DependentUpon>
+    </Content>
+    <Content Include="less\app.min.css">
+      <DependentUpon>app.css</DependentUpon>
+    </Content>
+    <Content Include="templates\main.html" />
+    <Content Include="templates\menu.html" />
+    <Content Include="templates\settings.html" />
     <Content Include="Web.config" />
     <Content Include="www\index.html" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="less\app.less" />
+    <Content Include="less\app.css.map">
+      <DependentUpon>app.css</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

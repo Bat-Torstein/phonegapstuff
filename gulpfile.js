@@ -8,7 +8,8 @@ var jshint = require('gulp-jshint');
 
 
 var paths = {
-    js: ['./js/**/.js'],
+    browserify: ['./js/*.js'],
+    js: ['./js/**/*.js'],
 	watch: ['./js/**/*.js', './templates/*.html', './less/*.less'],
 	less: ['./less/*.less'],
 	dist: {
@@ -37,10 +38,9 @@ function notifyLintError() {
     this.emit('end');
 }
 
-// Basic usage
 gulp.task('bundle', function() {
     // Single entry point to browserify
-	gulp.src(paths.js)
+	return gulp.src(paths.browserify)
         .pipe(browserify({
             transform: ['node-underscorify']
         }))
@@ -50,7 +50,7 @@ gulp.task('bundle', function() {
 
 // Rerun tasks whenever a file changes.
 gulp.task('watch', function() {
-    gulp.watch(paths.watch, ['bundle']);
+    gulp.watch(paths.watch, ['bundle','less','lint']);
 });
 
 
