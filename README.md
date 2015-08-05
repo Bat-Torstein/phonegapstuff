@@ -1,0 +1,2 @@
+# phonegapstuff
+Playground for Phonegap
