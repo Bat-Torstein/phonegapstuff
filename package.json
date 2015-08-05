@@ -1,0 +1,32 @@
+{
+  "name": "phonegapstuff",
+  "version": "0.0.0",
+  "description": "Playground for Phonegap",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "~3.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-less": "^3.0.3",
+    "gulp-jshint": "^1.11.2",
+    "gulp-shell": "^0.4.2",
+    "run-sequence": "^1.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bat-Torstein/phonegapstuff.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bat-Torstein/phonegapstuff/issues"
+  },
+  "homepage": "https://github.com/Bat-Torstein/phonegapstuff"
+}
